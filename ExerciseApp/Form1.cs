@@ -23,6 +23,12 @@ namespace ExerciseApp
 
         }
 
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+
         private void readOnlyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog Dialog = new OpenFileDialog();
@@ -51,8 +57,17 @@ namespace ExerciseApp
                     MessageBox.Show("Error: Could Not Read File. Original error: " + ex.Message);
                 }
             }
+        }
 
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+        }
+        
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 f2= new Form2();
+            f2.Show();
         }
     }
 }
